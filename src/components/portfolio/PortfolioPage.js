@@ -6,22 +6,23 @@ import ArrowGoBackIcon from '../../Icons/ArrowGoBackIcon';
 const PortfolioPage = ({ jobs }) => {
   let navigate = useNavigate();
   const { pId } = useParams();
+  const jobsId = jobs.map((job) => job.id);
   //페이지 이동 버튼 핸들러
-  const goHandler = (e, index) => {
+  const goHandler = (e, id) => {
     e.preventDefault();
     switch (e.target.parentElement['id']) {
       case 'backward':
         {
-          navigate(`/portfolio/${index - 1}`);
+          navigate(`/portfolio/${jobsId[jobsId.indexOf(id) - 1]}`);
         }
         break;
       case 'forward':
-        navigate(`/portfolio/${index + 1}`);
+        navigate(`/portfolio/${jobsId[jobsId.indexOf(id) + 1]}`);
         break;
     }
   };
   return jobs.map((job, index) =>
-    Number(pId) === index ? (
+    pId === job.id ? (
       <div key={job.id}>
         {/* 포트폴리오 상세페이지 래퍼 */}
         <div className={classes['description-wrapper']}>
@@ -50,7 +51,7 @@ const PortfolioPage = ({ jobs }) => {
                     aria-label={'go backward'}
                     className={classes['description-btn']}
                     id="backward"
-                    onClick={(e) => goHandler(e, index)}
+                    onClick={(e) => goHandler(e, job.id)}
                   >
                     <div
                       className={`${classes.bracket} ${classes['bracket-left']}`}
@@ -59,13 +60,13 @@ const PortfolioPage = ({ jobs }) => {
                 ) : (
                   false
                 )}
-                <span>{`${Number(pId) + 1} / ${jobs.length}`}</span>
+                <span>{`${jobsId.indexOf(pId) + 1} / ${jobs.length}`}</span>
                 {index !== jobs.length - 1 ? (
                   <button
                     aria-label={'go forward'}
                     className={classes['description-btn']}
                     id="forward"
-                    onClick={(e) => goHandler(e, index)}
+                    onClick={(e) => goHandler(e, job.id)}
                   >
                     <div
                       className={`${classes.bracket} ${classes['bracket-right']}`}
