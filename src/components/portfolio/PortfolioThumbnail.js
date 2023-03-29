@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import { Image } from '../styles/PortfolioStyle';
 
 const PortfolioThumbnail = (ele) => {
-  return ele.map((job, index) => (
-    <Link key={job.id} to={`/portfolio/${index}`}>
+  return ele.map((job) => (
+    <Link key={job.id} to={`/portfolio/${job.id}`}>
       <Image
         className="bgImage"
         key={job.id}
