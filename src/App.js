@@ -4,7 +4,6 @@ import {
   Route,
   Link,
   useLocation,
-  useParams,
   Navigate,
 } from 'react-router-dom';
 import Airtable from 'airtable';
