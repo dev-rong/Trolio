@@ -1,11 +1,5 @@
 import React, { Suspense, lazy, useState, useEffect, useCallback } from 'react';
-import {
-  Routes,
-  Route,
-  Link,
-  useLocation,
-  Navigate,
-} from 'react-router-dom';
+import { Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
 import Airtable from 'airtable';
 import DashboardIcon from './Icons/DashboardIcon';
 import DashboardFillIcon from './Icons/DashboardFillIcon';
