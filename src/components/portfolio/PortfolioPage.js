@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams, useNavigate } from 'react-router-dom';
 import classes from '../styles/PortfolioPage.module.css';
@@ -7,6 +7,13 @@ const PortfolioPage = ({ jobs }) => {
   let navigate = useNavigate();
   const { pId } = useParams();
   const jobsId = jobs.map((job) => job.id);
+  useEffect(() => {
+    {
+      if (!jobsId.includes(pId)) {
+        navigate('/notfound', { replace: true });
+      }
+    }
+  }, [pId]);
   //페이지 이동 버튼 핸들러
   const goHandler = (e, id) => {
     e.preventDefault();
