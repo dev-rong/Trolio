@@ -1,5 +1,5 @@
 import React, { Suspense, lazy, useState, useEffect, useCallback } from 'react';
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
 import Airtable from 'airtable';
 import DashboardIcon from './Icons/DashboardIcon';
 import DashboardFillIcon from './Icons/DashboardFillIcon';
@@ -15,6 +15,7 @@ import {
   ToggleNav,
 } from './components/styles/AppStyle';
 import Logo from './Logo.tsx';
+import Outlet from './components/Outlet';
 
 const lazyRetry = function (componentImport, name) {
   return new Promise((resolve, reject) => {
@@ -127,6 +128,8 @@ function App() {
                 path="/portfolio/:pId"
                 element={<PortfolioPage jobs={jobs} />}
               />
+              <Route path="/notfound" element={<Outlet />} />
+              <Route path="*" element={<Navigate to="/notfound" replace />} />
             </Routes>
           </Suspense>
         </Main>
