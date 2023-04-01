@@ -1,32 +1,5 @@
 import React from 'react';
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from 'chart.js';
-import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { Bar } from 'react-chartjs-2';
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-  ChartDataLabels
-);
-ChartJS.defaults.set('plugins.datalabels', {
-  color: 'black',
-  font: {
-    family: 'Nunito',
-    weight: 'bold',
-    size: '12px',
-  },
-});
 const TotalWorks = ({ rangedJobs, rangedJobB }) => {
   const countedWorks = rangedJobs.length;
   const countedWorkB = rangedJobB.length;
