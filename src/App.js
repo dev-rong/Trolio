@@ -16,6 +16,33 @@ import {
 } from './components/styles/AppStyle';
 import Logo from './Logo.tsx';
 import Outlet from './components/Outlet';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+  ChartDataLabels
+);
+ChartJS.defaults.set('plugins.datalabels', {
+  color: 'black',
+  font: {
+    family: 'Nunito',
+    weight: 'bold',
+    size: '12px',
+  },
+});
 
 const lazyRetry = function (componentImport, name) {
   return new Promise((resolve, reject) => {
