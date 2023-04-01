@@ -13,7 +13,7 @@ const PortfolioPage = ({ jobs }) => {
         navigate('/notfound', { replace: true });
       }
     }
-  }, [pId]);
+  }, [jobsId, pId]);
   //페이지 이동 버튼 핸들러
   const goHandler = (e, id) => {
     e.preventDefault();
