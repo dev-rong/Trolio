@@ -6,8 +6,11 @@ import DashboardFillIcon from './Icons/DashboardFillIcon';
 import PortfolioIcon from './Icons/PortfolioIcon';
 import PortfolioFillIcon from './Icons/PortfolioFillIcon';
 import PortfolioPage from './components/portfolio/PortfolioPage';
+import MailIcon from './Icons/MailIcon';
+import GithubIcon from './Icons/GithubIcon';
 import {
   Container,
+  Footer,
   Header,
   IconContainer,
   Main,
@@ -160,6 +163,18 @@ function App() {
             </Routes>
           </Suspense>
         </Main>
+        <Footer>
+          <p>© ChorongLee 2023</p>
+          <br />
+          <address>
+            <a href="mailto:dev.ronggg@gmail.com">
+              <MailIcon size={24} color={'#FFFFFF'} />
+            </a>
+            <a href="https://github.com/dev-rong/trolio">
+              <GithubIcon size={24} color={'#FFFFFF'} />
+            </a>
+          </address>
+        </Footer>
       </Container>
       <Navigation showNav={showNav}>
         <IconContainer>

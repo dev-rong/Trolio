@@ -71,7 +71,7 @@ export const Main = styled.main`
   width: 100%;
   max-width: 1300px;
   min-height: 100vh;
-  margin: 0 auto 0;
+  margin: 0 auto 100px;
 `;
 export const IconContainer = styled.ul`
   margin-block: 1.5rem;
@@ -96,5 +96,16 @@ export const IconContainer = styled.ul`
   a:active::after {
     opacity: 1;
     transform: scale(1.5);
+  }
+`;
+export const Footer = styled.footer`
+  background-color: ${theme.colors.primary};
+  color: ${theme.colors.white};
+  width: 100%;
+  height: 100px;
+  ${common.flexCenter};
+  flex-direction: column;
+  a:first-of-type {
+    margin-right: 2rem;
   }
 `;
