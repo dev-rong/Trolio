@@ -16,7 +16,11 @@ const LandingPage = () => {
               height="300px"
               src="./assets/images/dashboard-main-img.webp"
             />
-            <a href="https://lovepik.com/images/png-analytics.html">
+            <a
+              href="https://lovepik.com/images/png-analytics.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Analytics Png vectors by Lovepik.com
             </a>
           </div>
@@ -44,7 +48,11 @@ const LandingPage = () => {
               height="300px"
               src="./assets/images/portfolio-main-img.webp"
             />
-            <a href="https://www.freepik.com/free-vector/portfolio-management-previous-projects-samples-works-catalog-skills-presentation-successful-graphic-designer-web-developer-cartoon-character_11667016.htm#query=illustration%20portfolio&position=0&from_view=keyword&track=ais">
+            <a
+              href="https://www.freepik.com/free-vector/portfolio-management-previous-projects-samples-works-catalog-skills-presentation-successful-graphic-designer-web-developer-cartoon-character_11667016.htm#query=illustration%20portfolio&position=0&from_view=keyword&track=ais"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Image by vectorjuice
             </a>{' '}
             on Freepik

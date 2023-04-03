@@ -170,7 +170,11 @@ function App() {
             <a href="mailto:dev.ronggg@gmail.com">
               <MailIcon size={24} color={'#FFFFFF'} />
             </a>
-            <a href="https://github.com/dev-rong/trolio">
+            <a
+              href="https://github.com/dev-rong/trolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GithubIcon size={24} color={'#FFFFFF'} />
             </a>
           </address>
