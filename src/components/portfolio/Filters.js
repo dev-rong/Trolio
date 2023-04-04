@@ -89,14 +89,14 @@ const Filters = ({
         </FilterContainer>
         <FilterContainer>
           <h3>CATEGORY</h3>
-          {category.map((workType) => (
+          {category.map((category) => (
             <Checkbox
-              key={workType}
-              checked={checkList.includes(workType)}
-              onChange={(e) => changeEachHandler(e, workType)}
-              text={workType}
+              key={category}
+              checked={checkList.includes(category)}
+              onChange={(e) => changeEachHandler(e, category)}
+              text={category}
               name="category"
-              id={workType}
+              id={category}
             />
           ))}
         </FilterContainer>
