@@ -1,47 +1,37 @@
+<div>
+<a href="https://trolio.netlify.app">
+  <img src="/public/trolio_logo_black.png" alt="trolio logo" align="right" height="100" />
+</a> 
+<h1>Trolio</h1>
+</div>
 
-# Getting Started with Create React App
+![NodeJS](https://img.shields.io/badge/node.js-v14.19.0-yellow)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Trolio](https://trolio.netlify.app) is a dashboard and portfolio web app for freelance media translators/QCers which fetches data using Airtable API 
+.
+On the dashboard, you can compare the ratio of income, work type, platform, etc visualized with graphs and charts by the specific periods you choose while you can also organize your translation and QC work with details and posters on the portfolio. 
 
-## Available Scripts
+![image](https://user-images.githubusercontent.com/96870030/229689022-b8c991a4-b679-4a2c-885c-c323dea6000b.png)
 
-In the project directory, you can run:
+## Table Of Content
+- [Installation](#installation)
+- [Functions](#functions)
+- [Stacks](#stacks)
 
-### `npm start`
+## Installation
+```bash
+npm install
+npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Functions
+### Dashboard
+#### Compare the figures of job type, category, work form, total income, total working hours, total number of works, total running times, yealy income by selecting specific periods. You can easily check the difference with visualized charts and graphs.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Portfolio
+#### 1. List translation and QC works with details and posters
+#### 2. Filter works by its job type, work form, work type, platform
+#### 3. Search works by its title
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Stacks
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="" height="80"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/public/Airtablelogo.webp" height="80"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/public/chartjslogo.avif" height="80"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://images.velog.io/images/vi2920va/post/9b15f05e-6a45-4490-9003-2250397ecf58/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C.png" alt="" height="80"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/public/githublogo.png" height="80"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/public/netlifylogo.png" height="80"/> 
