@@ -88,7 +88,7 @@ const Filters = ({
           ))}
         </FilterContainer>
         <FilterContainer>
-          <h3>WORK TYPE</h3>
+          <h3>CATEGORY</h3>
           {category.map((workType) => (
             <Checkbox
               key={workType}
