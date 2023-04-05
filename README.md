@@ -5,6 +5,7 @@
 <h1>Trolio</h1>
 </div>
 
+![PreRelease](https://img.shields.io/badge/pre--release-v0.1.3--alpha-yellow)
 ![NodeJS](https://img.shields.io/badge/node.js-v14.19.0-green?logo=node.js)
 ![NPM](https://img.shields.io/badge/npm-v6.14.16-blue?logo=npm)
 
