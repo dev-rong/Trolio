@@ -167,13 +167,17 @@ function App() {
           <p>© ChorongLee 2023</p>
           <br />
           <address>
-            <a href="mailto:dev.ronggg@gmail.com">
+            <a
+              href="mailto:dev.ronggg@gmail.com"
+              aria-label="개발자에게 이메일 보내기"
+            >
               <MailIcon size={24} color={'#FFFFFF'} />
             </a>
             <a
               href="https://github.com/dev-rong/trolio"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="트롤리오 GitHub 페이지 열기"
             >
               <GithubIcon size={24} color={'#FFFFFF'} />
             </a>
