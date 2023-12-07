@@ -10,10 +10,10 @@
 ![NPM](https://img.shields.io/badge/npm-v6.14.16-blue?logo=npm)
 
 [Trolio](https://trolio.netlify.app) is a dashboard and portfolio web app for freelance media translators/QCers which fetches data using Airtable API.
-On the dashboard, you can compare the ratio of income, work form, platform, etc visualized with graphs and charts by the specific periods you choose while you can also organize and search your translation/QC works on the portfolio. For now, Trolio is a demo version which makes API call to get data from a temporary Airtable base. I can't guarantee when it will be, but I want to add sign up/in/out and integration features to release a beta version not in a long time.    
+On the dashboard, you can compare the ratio of income, work form, platform, etc visualized with graphs and charts by the specific periods you choose while you can also organize and search your translation/QC works on the portfolio. For now, Trolio is a demo version which makes API call to get data from a temporary Airtable base.  
 
 [트롤리오](https://trolio.netlify.app)는 프리랜서 영상번역/감수 작가를 위한 대시보드, 포트폴리오 웹앱으로 에어테이블 API를 이용해 데이터를 받아와 시각화합니다.
-대시보드 메뉴에서는 작업물의 유형, 플랫폼, 수입 등을 선택한 기간별로 비교할 수 있으며 포트폴리오 메뉴에서는 작업물을 정리 및 검색할 수 있습니다. 현재는 에어테이블 임시 데이터를 불러오는 데모 버전으로 데이터가 채워진 상태는 홈페이지에서만 확인 가능합니다. 로그인 및 에어테이블 계정 연동 기능은 추후 추가할 예정입니다. 
+대시보드 메뉴에서는 작업물의 유형, 플랫폼, 수입 등을 선택한 기간별로 비교할 수 있으며 포트폴리오 메뉴에서는 작업물을 정리 및 검색할 수 있습니다. 현재는 에어테이블 임시 데이터를 불러오는 데모 버전으로 데이터가 채워진 상태는 홈페이지에서만 확인 가능합니다. 
 
 ![image](https://user-images.githubusercontent.com/96870030/229689022-b8c991a4-b679-4a2c-885c-c323dea6000b.png)
 
