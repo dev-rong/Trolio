@@ -18,9 +18,15 @@ On the dashboard, you can compare the ratio of income, work form, platform, etc 
 ![image](https://user-images.githubusercontent.com/96870030/229689022-b8c991a4-b679-4a2c-885c-c323dea6000b.png)
 
 ## Table Of Content
+- [Links](#links)
 - [Installation](#installation)
 - [Functions](#functions)
 - [Stacks](#stacks)
+
+## Links
+🔗 [Trolio(트롤리오) 바로가기](https://trolio.netlify.app)  
+
+✍️ [Trolio(트롤리오) 개발 후기](https://dev-rong.github.io/blog/trolio-review)
 
 ## Installation
 ```bash
