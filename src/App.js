@@ -96,7 +96,7 @@ function App() {
         const secrets = await fetch(url).then((res) => res.json());
         const base = new Airtable({
           apiKey: secrets.apiKey,
-        }).base('app5FOsWcUdyn7EAx');
+        }).base(secrets.base)('July');
         base
           .select({
             view: 'Grid view',

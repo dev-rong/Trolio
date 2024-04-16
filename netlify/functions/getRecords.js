@@ -1,18 +1,11 @@
-const { AIRTABLE_API_KEY } = process.env;
+const { REACT_APP_AIRTABLE_API_KEY, REACT_APP_BASE } = process.env;
 
 exports.handler = async (event, context) => {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      endpointUrl: 'https://api.airtable.com',
-      apiKey: AIRTABLE_API_KEY,
+      key: REACT_APP_AIRTABLE_API_KEY,
+      base: REACT_APP_BASE,
     }),
   };
 };
-
-// var Airtable = require('airtable');
-// Airtable.configure({
-//   endpointUrl: 'https://api.airtable.com',
-//   apiKey: AIRTABLE_API_KEY,
-// });
-// var base = Airtable.base('app5FOsWcUdyn7EAx');
