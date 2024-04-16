@@ -1,5 +1,7 @@
 {
   "console-ninja.featureSet": "Community",
-  "editor.codeActionsOnSave": { "source.fixAll": true },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
   "editor.formatOnSave": false,
 }
