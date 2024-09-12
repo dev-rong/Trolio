@@ -91,7 +91,7 @@ function App() {
   }, []);
   useEffect(() => {
     async function fetchKey() {
-      const url = `/.netlify/functions/getRecords`;
+      const url = `netlify/functions/getRecords`;
       try {
         const secrets = await fetch(url).then((res) => res.json());
         const base = new Airtable({
