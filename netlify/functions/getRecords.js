@@ -1,11 +1,11 @@
-const { REACT_APP_AIRTABLE_API_KEY, REACT_APP_BASE } = process.env;
+const { REACT_APP_AIRTABLE_API_TOKEN, REACT_APP_BASE } = process.env;
 
-exports.handler = async (event, context) => {
+export async function handler(req, context) {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      key: REACT_APP_AIRTABLE_API_KEY,
+      apiKey: REACT_APP_AIRTABLE_API_TOKEN,
       base: REACT_APP_BASE,
     }),
   };
-};
+}
